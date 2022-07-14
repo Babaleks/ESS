@@ -9,13 +9,13 @@
     <title>Dashboard</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="#assets/css/bootstrap.min.css">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+    <link rel="stylesheet" href="#assets/css/style.css">
 
     <!-- Font Awesome JS -->
-    <script defer src="<?php echo base_url(); ?>assets/js/solid.js"></script>
-    <script defer src="<?php echo base_url(); ?>assets/js/fontawesome.js"></script>
+    <script defer src="#assets/js/solid.js"></script>
+    <script defer src="#assets/js/fontawesome.js"></script>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             </div>
             
             <br/>
-                <a href="<?php echo base_url();?>user/student" style="margin:15px; "><span class="fa fa-user mr-1"></span>Student Page</a>
+                <a href="#" style="margin:15px; "><span class="fa fa-user mr-1"></span>Student Page</a>
             <br />
             
             <ul class="list-unstyled components">
@@ -36,27 +36,27 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-book mr-1"></span>Logbook</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="<?php echo base_url();?>student/logbook" >Fill logbook</a>
+                            <a href="#" >Fill logbook</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url();?>student/view_logbook">View logbook</a>
+                            <a href="#">View logbook</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="<?php echo base_url();?>student/technicalreport" ><span class="fa fa-paper-plane mr-1"></span>Technical Report</a>
+                    <a href="#t" ><span class="fa fa-paper-plane mr-1"></span>Technical Report</a>
                 </li>
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-envelope mr-1"></span>Messages</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="<?php echo base_url();?>student/inbox">Inbox</a>
+                            <a href="#">Inbox</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url();?>student/outbox">Outbox</a>
+                            <a href="#">Outbox</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url();?>student/compose">Compose</a>
+                            <a href="#">Compose</a>
                         </li>
                     </ul>
                 </li>
@@ -64,10 +64,10 @@
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="<?php echo base_url();?>student/changepassword" class="download">Change Password</a>
+                    <a href="#" class="download">Change Password</a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url();?>auth/logout" class="article"><span class="fa fa-power-off mr-2"></span>Logout</a>
+                    <a href="#" class="article"><span class="fa fa-power-off mr-2"></span>Logout</a>
                 </li>
             </ul>
         </nav>
@@ -94,49 +94,14 @@
                         border: 0.5px solid #7386D5;
                         padding: 10px;"> <p>
                 
-       <!--   ?php if(!$passport_name == 0){
+      
                 
-                echo img(array('width' => '120', 'height' => '80', 'src' => 'upload/' .$passport_name)); 
-                echo '<br/>';
-                echo '<br/>';
-                }
-                else{
-                   echo 'No image!!';
-                }
-                ?>   -->
                 
-                <?php
-              
-                echo $this->session->flashdata('msg');
-                echo form_open_multipart('student/image');
-                echo form_upload('file');
-                echo '<br/>';
-                echo '<br/>';
-                echo form_submit(['name'=>'upload', 'value'=>'Upload', 'class'=>'btn btn-success', 'type'=>'submit']);
-                
-                echo form_close();
-    
-                ?>
                 </p>
                 <div class="table-responsive">
                 <table class="table table-unbordered" >
                     
-        <?php
-        if($get_image->num_rows() > 0){
-            foreach ($get_image->result() as $data) {
-                echo '<tr>';
-                echo '<td>'.img(array('width' => '100', 'height' => '140', 'src' => 'upload/' .$data->passport_name)). '</td>';
-                echo '<td>'.anchor('upload/' .$data->passport_name, '<span class="fa fa-eye mr-1"></span>View', array('class' => 'btn btn-primary')). '&emsp;'.anchor('student/delete_image/'.$data->mat_no, '<span class="fa fa-trash mr-1"></span> Delete', array('class' => 'btn btn-danger')).'</td>';
-                echo '</tr>';
-            }
-        }
-        else{
-            echo '<tr>';
-            echo '<td colspan="2">Images is empty!!</td>';
-            echo '</tr>';
-        }
         
-        ?>
     </table>
                 </div>    
                 
@@ -146,17 +111,17 @@
             <h4>Full Name:</h4>
             <p style="font-size:160%; text-transform:uppercase;"><?php echo $_SESSION['fullname']; ?></p>
             <h4>Matriculation Number:</h4>
-            <p style="font-size:160%;"><?php echo $_SESSION['mat_no']; ?></p>
+            <p style="font-size:160%;"></p>
             <h4>Registration Number:</h4>
-            <p style="font-size:160%;"><?php echo $_SESSION['reg_no']; ?></p>
+            <p style="font-size:160%;"></p>
             <h4>Program:</h4>
-            <p style="font-size:160%;"><?php echo $_SESSION['program']; ?></p>
+            <p style="font-size:160%;"></p>
             <h4>Level:</h4>
-            <p style="font-size:160%;"><?php echo $_SESSION['level']; ?></p>
+            <p style="font-size:160%;"></p>
             <h4>Department:</h4>
-            <p style="font-size:160%;"><?php echo $_SESSION['dept']; ?></p>
+            <p style="font-size:160%;"></p>
             <h4>College:</h4>
-            <p style="font-size:160%;"><?php echo $_SESSION['college']; ?></p>
+            <p style="font-size:160%;"></p>
         </div>
             
             
@@ -170,11 +135,11 @@
     </div>
 
     <!-- jQuery CDN  (=with AJAX) -->
-    <script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>
+    <script src="#assets/js/jquery-3.3.1.min.js"></script>
     <!-- Popper.JS -->
-    <script src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>
+    <script src="#assets/js/popper.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+    <script src="#assets/js/bootstrap.min.js"></script>
 
 
     <script type="text/javascript">
