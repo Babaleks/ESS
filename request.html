@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Dashboard</title>
+    <title>Request</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="#assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
 
     <!-- Font Awesome JS -->
-    <script defer src="#assets/js/solid.js"></script>
-    <script defer src="#assets/js/fontawesome.js"></script>
+    <script defer src="assets/js/solid.js"></script>
+    <script defer src="assets/js/fontawesome.js"></script>
 </head>
 
 <body>
@@ -88,41 +88,19 @@
               
             </nav>
             
-        <div id='studetails'>
-            <div style="float: right;
-                        width: 300px;
-                        border: 0.5px solid #7386D5;
-                        padding: 10px;"> <p>
-                
-      
-                
-                
-                </p>
-                <div class="table-responsive">
-                <table class="table table-unbordered" >
-                    
-        
-    </table>
-                </div>    
-                
+            <div class="row">
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="username" placeholder="Create username" required>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="date" name="date_of_birth" placeholder="Date of birth" required>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" type="date" name="date_of_birth" placeholder="Date of birth" required>
+                </div>
             </div>
-            
-            
-            <h4>Full Name:</h4>
-            <p style="font-size:160%; text-transform:uppercase;"><?php echo $_SESSION['fullname']; ?></p>
-            <h4>Matriculation Number:</h4>
-            <p style="font-size:160%;"></p>
-            <h4>Registration Number:</h4>
-            <p style="font-size:160%;"></p>
-            <h4>Program:</h4>
-            <p style="font-size:160%;"></p>
-            <h4>Level:</h4>
-            <p style="font-size:160%;"></p>
-            <h4>Department:</h4>
-            <p style="font-size:160%;"></p>
-            <h4>College:</h4>
-            <p style="font-size:160%;"></p>
-        </div>
+
+        
             
             
             
@@ -135,11 +113,11 @@
     </div>
 
     <!-- jQuery CDN  (=with AJAX) -->
-    <script src="#assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- Popper.JS -->
-    <script src="#assets/js/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="#assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS --->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 
     <script type="text/javascript">
