@@ -30,8 +30,7 @@ a:focus {
     border: 1px solid rgb(144, 144, 144);
     color: gray;
     box-sizing: border-box;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 10px;
   }
   .card-event {
     width: 300px;
@@ -80,8 +79,8 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
-    color: #fff;
+    background: #e2ffea;
+    color:#606060;
     transition: all 0.3s;
 }
 
@@ -91,12 +90,11 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #e2ffea;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul p {
@@ -111,14 +109,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+    color: #359738;
+    background: rgb(198, 255, 199);
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background:#67c36a;
 }
 
 a[data-toggle="collapse"] {
@@ -136,7 +134,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #e2ffea;
 }
 
 ul.CTAs {
