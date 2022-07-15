@@ -2539,10 +2539,10 @@ header, footer {
     color: #fff;
 }
 .btn.btn-framed.btn-info {
-    color: #17a2b8;
+    color: #1d993b;
 }
 .btn.btn-framed.btn-info:hover, .btn.btn-framed.btn-info:focus, .btn.btn-framed.btn-info:active {
-    background-color: #17a2b8;
+    background-color:  #1d993b;
     color: #fff;
 }
 .btn.btn-framed.btn-light {
