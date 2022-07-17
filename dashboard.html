@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="assets/js/solid.js"></script>
+    <script defer src="assets/js/fontawesome.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header"  >
+                <h3>Chamsmobile</h3>
+            </div>
+            
+            
+            
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" ><span class="fa fa-home mr-1" style="color:gray"></span> Home</a>
+                </li>
+                
+                <li>
+                   <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-clipboard-check mr-1" style="color:gray"></span> Request</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#" >Request Leave</a>
+                        </li>
+                        <li>
+                            <a href="#">Request loan</a>
+                        </li>
+                        <li>
+                            <a href="#">Request Change of Info</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" ><span class="fa fa-calculator mr-1" style="color:gray"></span> Deductions</a>
+                </li>
+                <li>
+                    <a href="#" ><span class="fa fa-receipt mr-1" style="color:gray"></span> Payroll</a>
+                </li>
+                <li>
+                    <a href="#" ><span class="fa fa-user-tie mr-1" style="color:gray"></span> Personal Infotrmation</a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-success">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    
+                   <h4 id="studentdis"> Hello, Hubert </h4>
+        
+                </div>
+              
+            </nav>
+            
+
+            <div class="row">
+                
+                    <div class="col-md-2 card">
+                    blahhh 
+                    </div>
+                
+                    <div class="col-md-2 card">
+                    Available Leave
+                    </div>
+                    
+                    <div class="col-md-6 card">
+                    Leave Taken
+                    </div>
+    
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 card-event">
+                    <h6>Upcoming Events</h6>
+                    <p>Leave Taken</p>
+                    
+                </div>
+            </div>
+            
+            
+           
+            
+        </div>
+        
+        
+        
+    </div>
+
+    <!-- jQuery CDN  (=with AJAX) -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
